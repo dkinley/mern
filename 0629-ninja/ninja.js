@@ -1,11 +1,12 @@
 //this is creating a Ninja class
 
 class ninja {
-    constructor (name, health, speed = 3, strength = 3){
+    const (name, health, speed = 3, strength = 3){
         this.name = name;
         this.health = health;
-        this.speed = speed;
         this.strength = strength;
+        this.speed = speed;
+        
     }
     sayName(){
         console.log("Ninjas name is: " + this.name);
@@ -13,25 +14,24 @@ class ninja {
     showStats(){
         console.log("Stats for: " + this.name);
         console.log("Health: " + this.health);
-        console.log("Speed: " + this.speed);
         console.log("Strength: " + this.strength);
+        console.log("Speed: " + this.speed);
+        
     }
     drinkSake(){
         this.health += 10;
-        console.log(this.name + " just drank sake and his health is now: " + this.health);
     }
 }
 
-    console.log("\n  Creating Bob");
-    const ninja1 = new ninja("Bob", 10);
-    ninja1.sayName();
-    ninja1.showStats();
-    ninja1.drinkSake();
-  // console.log(ninja1);
+    const ninjaOne = new ninja("First One");
+    ninjaOne.sayName();
+    ninjaOne.showStats();
+    ninjaOne.drinkSake();
 
-    console.log("\n  Creating Billy");
-    const ninja2 = new ninja("Billy", 15, 5, 7);
-    ninja2.sayName();
-    ninja2.showStats();
-    ninja2.drinkSake();
-  // console.log(ninja2);
+
+    console.log("Ninja Dos");
+    const ninjaTwo = new ninja("Second One");
+    ninjaTwo.sayName();
+    ninjaTwo.showStats();
+    ninjaTwo.drinkSake();
+ 
