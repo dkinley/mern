@@ -6,7 +6,7 @@ class Sensei {
         this.strength = strength;
     }
     sayName(){
-        console.log("Sensei called: " + this.name);
+        console.log("Sensei called: " + this.name); 
     }
     
     showStats(){
